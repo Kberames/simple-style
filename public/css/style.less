@@ -1,10 +1,15 @@
 // pre-compiled / less css
 @color-01: #444444;
 @color-02: #39809e;
+@color-03: #cccccc;
+@color-04: #bad2a3;
+@color-05: #999999;
 
 
 body {
     color: @color-01;
+    font-family: 'Muli';
+
 
     .page {
         //border: 1px dotted red;
@@ -18,13 +23,90 @@ body {
         .logo {
             //border: 5px dotted blue;
             display: table-cell;
-            width: 100%
+            width: 100%;
+
+
+            span {
+                color: @color-02;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-bottom: 0;
+            }
+
+            .tagline {
+                font-size: 10px;
+                margin-top: 0;
+            //    color: #555;
+            //    font-weight: normal;
+                letter-spacing: 0.1em;
+            //    font-style: normal !important;
+            }
         }
 
         .search {
-            //border: 5px dotted green;
+            //border: px dotted green;
             display: table-cell;
+
+            input {
+                //border: 1px dotted @color-03;
+                border-radius: 3px;
+                padding: 5px;
+            }
         }
+    }
+
+    .row {
+        //border: 1px dotted red;
+        border-bottom: 5px solid @color-03;
+        overflow: auto;
+        margin-top: 40px;
+        padding-bottom: 30px;
+
+        .column {
+            //border: 1px dotted blue;
+            box-sizing: border-box;
+            float: left;
+            min-height: 50px;
+            width: 25%;
+
+            a {
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: color-02;
+            }
+
+            a:hover {
+                color: color-04;
+            }
+
+            .product {
+                text-align: center;
+
+                h3 {
+                    font-size: 14px;
+                    //border: 1px dotted red;
+                }
+            }
+
+            .info {
+                h3 {
+
+                }
+
+                p {
+
+                }
+            }
+
+        }
+
+        // .column:nth-child(odd) {
+        //      background: yellow;
+        //  }
     }
 }
 
@@ -44,19 +126,35 @@ body {
     margin-right: 20px;
     }
 
-    a:hover {
-        color: green;
-    }
-
     a:visited {
         color: @color-01;
     }
 
+    a:hover {
+        color: @color-04;
+    }
+
     .active {
-        border-bottom: 5px solid @color-02;
+        //border-bottom: 5px solid @color-02;
         color: @color-02 !important;
     }
 }
+
+.cart {
+    color: @color-05;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 90px;
+    text-align: right;
+}
+
+.footer {
+    padding-top: 40px;
+    text-align: right;
+
+
+}
+
 
 // normal css
 /*

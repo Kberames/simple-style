@@ -9,6 +9,7 @@
         <title>Simple Styles</title>
 
         <link href="/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="/lib/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
         <link href="/css/style.less" rel="stylesheet/less" type="text/css">
 
         <!-- set options before less.js script -->
@@ -26,15 +27,20 @@
         </script>
         <script src="/lib/less/dist/less.js"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
     </head>
     <body>
         <div class="page">
             <div class="header">
             <!-- Site name header -->
+            <div class="row cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart Empty
+            </div>
                 <div class="site-info">
                     <div class="logo">
-                        <h1>blankoshop</h1>
-                        <p>A blank theme</p>
+                        <h1><span>blanko</span>shop</h1>
+                        <p class="tagline">A blank theme for Virtuemart and Joomla 3</p>
                     </div>
                     <div class="search">
                         <input placeholder="search...">
@@ -49,11 +55,75 @@
                 </nav>
             </div>
             <div class="body">
+
+                <div class="row">
+                    <div class="column">
+                        <div class="info">
+                            <h3>Our Featured Products</h3>
+                            <p>Quisque sed quam dolor, scelerisque iaculis orci. Aenean a scelerisque enim. Sed accumsan tristique ipsum, in vestibulum nulla fermentum quis. Integer porttitor elementum est ut laoreet.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <div class="product">
+                                <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                                <h3>Product Name</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="product">
+                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                            <h3>Product Name</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="product">
+                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                            <h3>Product Name</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="info">
+                            <h3>Our Featured Products</h3>
+                            <p>Quisque sed quam dolor, scelerisque iaculis orci. Aenean a scelerisque enim. Sed accumsan tristique ipsum, in vestibulum nulla fermentum quis. Integer porttitor elementum est ut laoreet.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href="#">
+                            <div class="product">
+                                <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                                <h3>Product Name</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div class="product">
+                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                            <h3>Product Name</h3>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="product">
+                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
+                            <h3>Product Name</h3>
+                        </div>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
                 <div ui-view></div>
             </div>
-            <div class="footer"></div>
+            <div class="footer">
+                <a href="#">Joomla Template by Joomlabamboo
+                </a>
+            </div>
         </div>
 
         <!-- Include all of my angular code -->
