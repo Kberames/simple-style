@@ -1,0 +1,67 @@
+// pre-compiled / less css
+@color-01: #444444;
+@color-02: #39809e;
+
+
+body {
+    color: @color-01;
+
+    .page {
+        //border: 1px dotted red;
+        margin: auto;
+        max-width: 965px;
+    }
+
+    .site-info {
+        //border: 5px dotted red;
+
+        .logo {
+            //border: 5px dotted blue;
+            display: table-cell;
+            width: 100%
+        }
+
+        .search {
+            //border: 5px dotted green;
+            display: table-cell;
+        }
+    }
+}
+
+    nav {
+    //border: 1px dotted blue;
+    overflow: auto;
+
+    a {
+    //border: 1px dotted red;
+    display: block;
+    float:left;
+    font-size: 13px;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+    margin-right: 20px;
+    }
+
+    a:hover {
+        color: green;
+    }
+
+    a:visited {
+        color: @color-01;
+    }
+
+    .active {
+        border-bottom: 5px solid @color-02;
+        color: @color-02 !important;
+    }
+}
+
+// normal css
+/*
+nav a{
+    border: 1px dotted red;
+    padding: 20px;
+}
+*/

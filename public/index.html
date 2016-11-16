@@ -2,31 +2,55 @@
 <html>
     <head>
         <meta charset="utf-8">
+
+        <!-- Allow site to be scaled down in mobile mode -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>Simple Styles</title>
+
         <link href="/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css">
         <link href="/css/style.less" rel="stylesheet/less" type="text/css">
 
+        <!-- set options before less.js script -->
+        <script>
+         less = {
+           env: "development",
+           async: false,
+           fileAsync: false,
+           poll: 1000,
+           functions: {},
+           dumpLineNumbers: "comments",
+           relativeUrls: false,
+           rootpath: ":/a.com/"
+         };
+        </script>
         <script src="/lib/less/dist/less.js"></script>
+
     </head>
     <body>
         <div class="page">
             <div class="header">
-                <div>
-                    <div>
+            <!-- Site name header -->
+                <div class="site-info">
+                    <div class="logo">
                         <h1>blankoshop</h1>
                         <p>A blank theme</p>
                     </div>
-                    <input placeholder="search...">
+                    <div class="search">
+                        <input placeholder="search...">
+                    </div>
                 </div>
                 <nav>
                     <a href="/#/">Home</a>
-                    <a href="/#/">Front Page</a>
+                    <a href="/#/" class="active">Front Page</a>
                     <a href="/#/">Categories</a>
                     <a href="/#/">Category</a>
                     <a href="/#/">Product</a>
                 </nav>
             </div>
             <div class="body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
                 <div ui-view></div>
             </div>
             <div class="footer"></div>
