@@ -28,9 +28,12 @@
         <script src="/lib/less/dist/less.js"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css" rel="stylesheet">
+
+
 
     </head>
-    <body>
+    <body ng-app="App">
         <div class="page">
             <div class="header">
             <!-- Site name header -->
@@ -47,77 +50,12 @@
                     </div>
                 </div>
                 <nav>
-                    <a href="/#/">Home</a>
-                    <a href="/#/" class="active">Front Page</a>
-                    <a href="/#/">Categories</a>
-                    <a href="/#/">Category</a>
-                    <a href="/#/">Product</a>
+                    <a href="/#/" class="active">Home</a>
+                    <a href="/#/front-page">Front Page</a>
+                    <a href="/#/products">Product</a>
                 </nav>
             </div>
             <div class="body">
-
-                <div class="row">
-                    <div class="column">
-                        <div class="info">
-                            <h3>Our Featured Products</h3>
-                            <p>Quisque sed quam dolor, scelerisque iaculis orci. Aenean a scelerisque enim. Sed accumsan tristique ipsum, in vestibulum nulla fermentum quis. Integer porttitor elementum est ut laoreet.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="column">
-                        <a href="#">
-                            <div class="product">
-                                <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                                <h3>Product Name</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <div class="product">
-                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                            <h3>Product Name</h3>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="product">
-                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                            <h3>Product Name</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="info">
-                            <h3>Our Featured Products</h3>
-                            <p>Quisque sed quam dolor, scelerisque iaculis orci. Aenean a scelerisque enim. Sed accumsan tristique ipsum, in vestibulum nulla fermentum quis. Integer porttitor elementum est ut laoreet.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="column">
-                        <a href="#">
-                            <div class="product">
-                                <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                                <h3>Product Name</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <div class="product">
-                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                            <h3>Product Name</h3>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="product">
-                            <img src="http://bambootheme.com/showcase/blankoshop/images/stories/virtuemart/product/resized/1300536311_brownwhitesneakers_200x200.jpg"/>
-                            <h3>Product Name</h3>
-                        </div>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
                 <div ui-view></div>
             </div>
             <div class="footer">
@@ -131,10 +69,17 @@
         <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
 
         <script src="/lib/jquery/dist/jquery.js"></script>
+
+        <!-- source script from bower install bxslider was out of date
+        <script src="\lib\bxslider\source\jquery.bxSlider.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+
         <script src="/js/jquery-sample.js"></script>
 
         <script src="/js/App.js"></script>
         <script src="/js/HomeController.js"></script>
+        <script src="/js/ProductsController.js"></script>
+        <script src="/js/FrontPageController.js"></script>
 
     </body>
 </html>

@@ -8,10 +8,21 @@ namespace App {
             $stateProvider
                 .state ('home', {
                     url: '/',
-                    //template: 'This is my home page. <p> title value: {{ title }} </p>',
                     templateUrl: 'templates/home.html',
                     controller: App.HomeController,
                     controllerAs: 'myController'
+                })
+                .state ('front-page', {
+                    url: '/front-page',
+                    templateUrl: 'templates/front-page.html',
+                    controller: App.FrontPageController,
+                    controllerAs: 'frontPageController'
+                })
+                .state ('product', {
+                    url: '/products',
+                    templateUrl: 'templates/products.html',
+                    controller: App.ProductsController,
+                    controllerAs: 'productsController'
                 })
 
             }
