@@ -135,7 +135,7 @@ body {
     }
 
     .active {
-        //border-bottom: 5px solid @color-02;
+        border-bottom: 5px solid @color-02;
         color: @color-02 !important;
     }
 }
@@ -166,29 +166,67 @@ body {
         border: 5px solid red;
 
         a {
-            border: 1px dotted red;
+            //border: 1px dotted red;
             float: none;
             margin-right: 0;
         }
     }
-    .site-info {
-        border: 5px dotted green;
+
+    .product {
+        //border: 1px solid red;
+        img{
+            width: 100%
+        }
+    }
+
+    body {
+
+        .site-info {
+        //border: 5px dotted green;
 
         .logo, .search {
-            display: block !important;
+            display: block;
+            padding: 10px;
 
         }
 
         .logo {
-            border: 5px dotted blue;
+            //border: 5px dotted blue;
+            box-sizing: border-box;
 
-        //    h1 {
-        //        font-size: 30px;
-        //    }
+            h1 {
+                font-size: 30px;
+                padding: 10px;
+            }
         }
+
         .search {
-            border: 5px dotted orange;
-            display: block;
+            //border: 5px dotted orange;
+            //display: block;
+
+            input{
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+    }
+    }
+}
+
+@media (max-width:@small-size) {
+    body .site-info .logo h1 {
+        font-size: 12px;
+        padding: 10px;
+
+    }
+
+    body .row .column {
+        //border: 1px dotted red;
+        float: none;
+        width: 100%;
+        img {
+            height: 100%;
+            width: auto;
         }
     }
 }
