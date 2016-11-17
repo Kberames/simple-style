@@ -155,6 +155,43 @@ body {
 
 }
 
+//----------------------------
+// Mobile responsive area
+@large-size: 1024px;
+@medium-size: 800px;
+@small-size: 640px;
+
+@media (max-width:@medium-size) {
+    nav {
+        border: 5px solid red;
+
+        a {
+            border: 1px dotted red;
+            float: none;
+            margin-right: 0;
+        }
+    }
+    .site-info {
+        border: 5px dotted green;
+
+        .logo, .search {
+            display: block !important;
+
+        }
+
+        .logo {
+            border: 5px dotted blue;
+
+        //    h1 {
+        //        font-size: 30px;
+        //    }
+        }
+        .search {
+            border: 5px dotted orange;
+            display: block;
+        }
+    }
+}
 
 // normal css
 /*
